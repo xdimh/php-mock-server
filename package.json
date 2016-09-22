@@ -1,0 +1,30 @@
+{
+  "name": "php-mock-server",
+  "version": "1.0.1",
+  "description": "simple php mock server",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdimh/php-mock-server.git"
+  },
+  "keywords": [
+    "fms",
+    "php",
+    "mock"
+  ],
+  "author": "rainypin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdimh/php-mock-server/issues"
+  },
+  "homepage": "https://github.com/xdimh/php-mock-server#readme",
+  "devDependencies": {
+    "fms": "^0.0.32",
+    "gulp": "^3.9.1",
+    "gulp-multi-process": "0.0.3",
+    "gulp-nodemon": "^2.1.0",
+    "shelljs": "^0.7.4",
+    "yargs": "^5.0.0"
+  }
+}
