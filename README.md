@@ -11,7 +11,7 @@
 
 ### 在本地搭建简单的php mock server
 
-1. 将mock_server,mock_data目录拷贝到你的项目中,mock_server用来解析渲染php模板,mock_data目录中定义了同步和异步的模拟数据。
+将mock_server,mock_data目录拷贝到你的项目中,mock_server用来解析渲染php模板,mock_data目录中定义了同步和异步的模拟数据。
 在mock_data中一个页面对应一个模拟数据js。例如:views_dev目录中的test.html.php页面对应的模拟数据js为test_mock.js。
 
 ```javascript
@@ -57,7 +57,7 @@ module.exports = {
 
 views定义服务端同步渲染数据, ajax定义异步接口请求数据。
 
-2. 将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
+将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
 
 ```javascript
 npm install  //安装依赖
@@ -65,4 +65,4 @@ gulp new --page pageName //新建页面
 gulp mock //启动本地mock 服务
 ```
 
-3. 访问 http://127.0.0.1:3004
+访问 http://127.0.0.1:3004
