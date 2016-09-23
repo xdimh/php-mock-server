@@ -58,10 +58,12 @@ module.exports = {
 
    * 安装依赖``npm install``
    * 新建php页面``gulp new --page pageName``
-
      新建页面的过程中同时会创建对应页面的数据模拟js文件
      同时需要在fws.js文件中引入 如下:
-
+     ```javascript
+     viewMock.push(require('./test_mock.js').view);
+     ajaxMock = ajaxMock.concat(require('./test_mock.js').ajax);
+     ```
 
     ```javascript
     npm install  //安装依赖
