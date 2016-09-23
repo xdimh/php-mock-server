@@ -1,7 +1,6 @@
 /**
  * 本地自测mock数据对象模板
  * @version 1.0
- * @author rainypin(rainyin@xiaoyouzi.com)
  * Created by rainypin on 16/9/22.
  */
 

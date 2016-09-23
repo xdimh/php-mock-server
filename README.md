@@ -17,7 +17,6 @@
 /**
  * 本地自测mock数据对象模板
  * @version 1.0
- * @author rainypin(rainyin@xiaoyouzi.com)
  * Created by rainypin on 16/9/22.
  */
 
@@ -54,14 +53,13 @@ module.exports = {
 };
 ```
 
-views定义服务端同步渲染数据, ajax定义异步接口请求数据。
+2. views定义服务端同步渲染数据, ajax定义异步接口请求数据。
+   将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
 
-将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
+    ```javascript
+    npm install  //安装依赖
+    gulp new --page pageName //新建页面
+    gulp mock //启动本地mock 服务
+    ```
 
-```javascript
-npm install  //安装依赖
-gulp new --page pageName //新建页面
-gulp mock //启动本地mock 服务
-```
-
-访问 http://127.0.0.1:3004
+3. 访问 http://127.0.0.1:3004

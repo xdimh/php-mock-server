@@ -1,7 +1,6 @@
 /**
  * 根据模板创建页面
  * @version 1.0
- * @author rainypin(rainyin@xiaoyouzi.com)
  * Created by rainypin on 16/9/22.
  */
 

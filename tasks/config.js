@@ -1,7 +1,6 @@
 /**
  * 文件路径等基本配置
  * @version 1.0
- * @author rainypin(rainyin@xiaoyouzi.com)
  * Created by rainypin on 16/9/22.
  */
 

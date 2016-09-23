@@ -1,8 +1,7 @@
 /**
  * 所有的mock数据配置包括同步异步
  * @version 1.0
- * @author zhuzhenyu(zhuzhenyu@xiaoyouzi.com)
- * Created by zhuzhenyu on 16/9/19.
+ * Created by rainypin on 16/9/19.
  */
 
 var fms = require('fms'),
