@@ -58,20 +58,15 @@ module.exports = {
 
    * 安装依赖``npm install``
    * 新建php页面``gulp new --page pageName``
+
      新建页面的过程中同时会创建对应页面的数据模拟js文件
      同时需要在fws.js文件中引入 如下:
+
      ```javascript
      viewMock.push(require('./test_mock.js').view);
      ajaxMock = ajaxMock.concat(require('./test_mock.js').ajax);
      ```
+   * 启动本地mock服务``gulp mock``
 
-    ```javascript
-    npm install  //安装依赖
-    gulp new --page pageName //新建页面
-    // 新建页面的过程中同时会创建对应页面的数据模拟js文件
-    // 同时需要在fws.js文件中引入 如下:
-
-    gulp mock //启动本地mock 服务
-    ```
 
 3. 访问 http://127.0.0.1:3004
