@@ -56,10 +56,12 @@ module.exports = {
 2. views定义服务端同步渲染数据, ajax定义异步接口请求数据。
    将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
 
-   * 安装依赖
-     ``npm install``
-   * 新建php页面
-     ``gulp new --page pageName``
+   * 安装依赖``npm install``
+   * 新建php页面``gulp new --page pageName``
+
+     新建页面的过程中同时会创建对应页面的数据模拟js文件
+     同时需要在fws.js文件中引入 如下:
+
 
     ```javascript
     npm install  //安装依赖
