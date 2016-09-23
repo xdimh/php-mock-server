@@ -72,6 +72,7 @@ module.exports = {
 3. 访问 http://127.0.0.1:3004
 
 ###自定义Smarty模板的分界符
+修改mock_server文件加下index.php如下两行代码
 ```php
 $_smarty -> setLeftDelimiter('{%');
 $_smarty -> setRightDelimiter('%}');
