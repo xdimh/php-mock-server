@@ -39,11 +39,15 @@ gulp.task('fms.start',function(cb){
     });
 });
 
-
+//为什么要分别在两个不同的进程启动fms 和 phpserver?
+//phpserver会阻塞nodemon的后续文件变更实时重新启动fms。
 gulp.task('multi',function(cb){
     return gulpMultiProcess(['fms.start', 'phpserver.start'], cb);
 });
 //启动本地php服务器
+//使用stdbuf的原因 php -S 127.0.0.1:' + phpServerPort + ' -t ' + mockServerDir
+//启动服务后会挂起,输出到stdout 管道符中的内容会被buffer并不能马上显示出来
+//通过stdbuf -oL 使得命令的执行输出能够立马显示
 gulp.task('phpserver.start', function(cb){
     var mockServerDir = config.mockServerDir;
     cb();

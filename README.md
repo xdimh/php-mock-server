@@ -52,9 +52,9 @@ module.exports = {
     ]
 };
 ```
+views定义服务端同步渲染数据, ajax定义异步接口请求数据。
 
-2. views定义服务端同步渲染数据, ajax定义异步接口请求数据。
-   将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。
+2. 将tasks目录,gulpfile文件,package.json文件拷贝项目相应位置。然后:
 
    * 安装依赖``npm install``
    * 新建php页面``gulp new --page pageName``
