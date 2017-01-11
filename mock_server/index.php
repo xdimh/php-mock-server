@@ -23,6 +23,8 @@ $__settings = __object_array(json_decode($_POST['_fms'], true));
     data                "{"title":"论数据约定在前后端配合中的重要性"}"
 */
 
+include '../../my/func/func.inc.php';
+
 // smarty 初始化
 require('libs/Smarty.class.php');
 $_smarty = new Smarty();
@@ -30,6 +32,7 @@ $_smarty = new Smarty();
 
 // smarty bug 最高提示级别
 error_reporting(E_ALL);
+//error_reporting(0);
 // 设置模板目录
 $_smarty->setTemplateDir($__settings['templateDir']);
 
@@ -37,8 +40,9 @@ $_smarty -> setLeftDelimiter('{%');
 $_smarty -> setRightDelimiter('%}');
 
 // 渲染数据
+//print_r($__settings['data']);die;
 foreach ($__settings['data'] as $key => $value) {
-$_smarty->assign($key, $value);
+$_smarty->assign($key, json_decode(json_encode($value)));
 }
 // 渲染页面
 $_smarty->display($__settings['templatePath']);
